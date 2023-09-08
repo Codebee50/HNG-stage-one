@@ -19,7 +19,7 @@ def stageone(reqeust, *args, **kwargs):
         'track': track,
         'current_day': current_day,
         'utc_time': utc_time,
-        'github_file_url': 'https://github.com/Codebee50/HNG-stage-one/blob/a8d485598150d9a5ae9f2f259a8c92654e627433/backend/api/views.py',
+        'github_file_url': 'https://github.com/Codebee50/HNG-stage-one/blob/main/backend/api/views.py',
         'github_repo_url': 'https://github.com/Codebee50/HNG-stage-one.git',
         'status_code': status.HTTP_200_OK
     }
@@ -37,7 +37,7 @@ def getCurrentDay():
     return day
 
 """
-this function uses the built in timezone class to get the utc time 
+this function uses the built in datetime class to get the utc time 
 """
 def getUtc():
    return datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
