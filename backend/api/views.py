@@ -3,7 +3,7 @@ from rest_framework import status
 from rest_framework.response import Response
 from rest_framework.decorators import api_view
 from datetime import datetime
-from django.utils import timezone
+
 # Create your views here.
 
 @api_view(['GET'])
@@ -40,4 +40,4 @@ def getCurrentDay():
 this function uses the built in timezone class to get the utc time 
 """
 def getUtc():
-   return timezone.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+   return datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
