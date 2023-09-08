@@ -40,4 +40,4 @@ def getCurrentDay():
 this function uses the built in timezone class to get the utc time 
 """
 def getUtc():
-   return timezone.now() 
+   return timezone.now().strftime("%Y-%m-%dT%H:%M:%SZ")
